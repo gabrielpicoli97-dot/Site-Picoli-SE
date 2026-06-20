@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { LayoutDashboard, PhoneCall, Menu, X } from 'lucide-react'
+import { PhoneCall, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 const links = [
@@ -21,14 +21,12 @@ export default function Header() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
-        <a href="#top" className="flex items-center gap-3 text-white">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-white text-midnight shadow-glow">
-            <LayoutDashboard className="h-5 w-5" />
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/80">Picoli</p>
-            <p className="text-xs text-white/60">Soluções Elétricas</p>
-          </div>
+        <a href="#top" className="flex items-center text-white">
+          <img
+            src="/img/picoli soluções elétricas logo final.png"
+            alt="Picoli Soluções Elétricas"
+            className="h-12 w-auto"
+          />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">

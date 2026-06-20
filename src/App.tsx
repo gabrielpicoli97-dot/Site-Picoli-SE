@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { MessageSquare } from 'lucide-react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -35,6 +36,19 @@ function App() {
           <Footer />
         </div>
       </main>
+
+      <a
+        href="https://wa.me/5551995922019?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20elétrica%20residencial"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white transition-all duration-200 hover:scale-110 active:scale-95"
+      >
+        <span className="absolute -top-1 right-1 inline-flex h-3 w-3 items-center justify-center">
+          <span className="absolute inline-flex h-full w-full rounded-full bg-gold opacity-70 animate-ping" />
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-gold" />
+        </span>
+        <MessageSquare className="h-7 w-7" fill="white" />
+      </a>
     </div>
   )
 }

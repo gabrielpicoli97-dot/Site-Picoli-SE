@@ -24,6 +24,18 @@ const services = [
   },
 ]
 
+const complementaryServices = [
+  'Ventilador de teto',
+  'Caça de curtos e mau contato',
+  'Organização e revisão de pontos elétricos',
+  'Substituição de chuveiros',
+  'Divisão de circuitos',
+  'Instalações leves',
+]
+
+const serviceCard = 'glass-card group overflow-hidden rounded-[2rem] border border-white/10 p-8 shadow-glow'
+const complementaryCard = 'flex items-start gap-3 rounded-xl border border-white/5 bg-black/20 p-3 text-white transition hover:border-gold/20'
+
 export default function Services() {
   return (
     <section id="services" className="py-24">
@@ -42,7 +54,7 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              className="glass-card group overflow-hidden rounded-[2rem] border border-white/10 p-8 shadow-glow"
+              className={serviceCard}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -59,14 +71,17 @@ export default function Services() {
         </div>
 
         <div className="mt-12 rounded-[2rem] border border-white/10 bg-white/5 p-8 text-white/80 shadow-glow">
-          <p className="text-sm uppercase tracking-[0.24em] text-gold">Também atendemos</p>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <p>Ventilador de teto</p>
-            <p>Identificação de curtos e mau contato</p>
-            <p>Organização e revisão de pontos elétricos</p>
-            <p>Pequenos reparos elétricos residenciais</p>
-            <p>Instalação de disjuntores</p>
-            <p>Quadros elétricos simples</p>
+          <p className="text-sm uppercase tracking-[0.24em] text-gold">Reparos e Manutenções Complementares</p>
+          <div className="mt-6 grid gap-4 text-sm sm:grid-cols-2 md:grid-cols-3">
+            {complementaryServices.map((item) => (
+              <div
+                key={item}
+                className="flex items-start gap-3 rounded-xl border border-white/5 bg-black/20 p-3 text-white transition hover:border-gold/20"
+              >
+                <Bolt className="mt-1 h-4 w-4 flex-shrink-0 text-gold" />
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
