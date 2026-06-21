@@ -24,7 +24,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
         <a href="#top" className="flex items-center text-white">
           <img
-            src="/img/picoli-logo.png"
+            src="/services/img/arte headline.png"
             alt="Picoli Soluções Elétricas"
             className="h-10 sm:h-11 lg:h-12 w-auto"
           />
