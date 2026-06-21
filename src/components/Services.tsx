@@ -45,7 +45,7 @@ export default function Services() {
           <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">
             Soluções residenciais com segurança, organização e atendimento local.
           </h2>
-          <p className="mt-4 text-base leading-8 text-white/70">
+          <p className="mt-4 text-[18px] leading-8 text-white/75 sm:text-lg">
             Instalações, reparos, quadros e manutenção preventiva pensados para a elétrica da sua casa em Gravataí.
           </p>
         </div>
@@ -62,24 +62,24 @@ export default function Services() {
               whileHover={{ y: -6 }}
             >
               <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-gold/10 text-gold transition group-hover:bg-gold/15">
-                <service.icon className="h-6 w-6" />
+                <service.icon className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-semibold text-white">{service.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-white/70">{service.description}</p>
+              <h3 className="text-[22px] font-semibold text-white">{service.title}</h3>
+              <p className="mt-3 text-[17px] leading-8 text-white/75">{service.description}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="mt-12 rounded-[2rem] border border-white/10 bg-white/5 p-8 text-white/80 shadow-glow">
-          <p className="text-sm uppercase tracking-[0.24em] text-gold">Reparos e Manutenções Complementares</p>
-          <div className="mt-6 grid gap-4 text-sm sm:grid-cols-2 md:grid-cols-3">
+          <p className="text-base uppercase tracking-[0.24em] text-gold">Reparos e Manutenções Complementares</p>
+          <div className="mt-6 grid gap-4 text-base sm:grid-cols-2 md:grid-cols-3">
             {complementaryServices.map((item) => (
               <div
                 key={item}
-                className="flex items-start gap-3 rounded-xl border border-white/5 bg-black/20 p-3 text-white transition hover:border-gold/20"
+                className="flex items-start gap-3 rounded-xl border border-white/5 bg-black/20 p-4 text-white transition hover:border-gold/20"
               >
-                <Bolt className="mt-1 h-4 w-4 flex-shrink-0 text-gold" />
-                <span>{item}</span>
+                <Bolt className="mt-1 h-5 w-5 flex-shrink-0 text-gold" />
+                <span className="leading-7">{item}</span>
               </div>
             ))}
           </div>

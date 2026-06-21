@@ -23,25 +23,26 @@ export default function Hero() {
             <Sparkles className="h-4 w-4" />
             Elétrica residencial em Gravataí
           </span>
-          <h1 className="font-semibold leading-tight text-white text-[30px] sm:text-[36px] lg:text-[52px]">
+          <h1 className="font-semibold leading-tight text-white text-[36px] sm:text-[44px] lg:text-[60px]">
             Eletricista residencial em Gravataí com atendimento rápido, seguro e bem feito.
           </h1>
-          <p className="mt-6 max-w-xl text-[17px] leading-8 text-white/75">
+          <p className="mt-6 max-w-xl text-[19px] leading-9 text-white/80">
             Instalação de tomadas, troca de disjuntores, chuveiros, iluminação, ventiladores de teto e manutenção elétrica residencial com orçamento pelo WhatsApp.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-[16px] font-semibold uppercase tracking-[0.06em] text-midnight shadow-lg shadow-gold/20 transition hover:scale-[1.02] hover:brightness-105"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-6 py-4 text-[17px] font-semibold uppercase tracking-[0.06em] text-midnight shadow-lg shadow-gold/20 transition hover:scale-[1.02] hover:brightness-105 sm:w-auto"
             >
+              <img src="/img/whatsapp.png" alt="WhatsApp" className="h-5 w-5" />
               Chamar no WhatsApp
             </a>
             <a
               href="#services"
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 text-[16px] font-semibold text-white/90 transition hover:border-gold hover:text-gold"
+              className="inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-4 text-[17px] font-semibold text-white/90 transition hover:border-gold hover:text-gold sm:w-auto"
             >
               Ver serviços
             </a>
@@ -50,11 +51,11 @@ export default function Hero() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             <div className="rounded-[1.75rem] border border-white/10 bg-white/5 p-5 shadow-glow">
               <p className="text-sm uppercase tracking-[0.24em] text-white/60">Atendimento</p>
-              <p className="mt-2 text-xl font-semibold text-white">Gravataí e bairros próximos</p>
+              <p className="mt-2 text-2xl font-semibold text-white">Gravataí e bairros próximos</p>
             </div>
             <div className="rounded-[1.75rem] border border-white/10 bg-white/5 p-5 shadow-glow">
               <p className="text-sm uppercase tracking-[0.24em] text-white/60">Tranquilidade</p>
-              <p className="mt-2 text-xl font-semibold text-white">Diagnóstico completo antes de qualquer reparo</p>
+              <p className="mt-2 text-2xl font-semibold text-white">Diagnóstico completo antes de qualquer reparo</p>
             </div>
           </div>
         </motion.div>
