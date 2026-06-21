@@ -22,13 +22,12 @@ export default function Header() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
-        <a href="#top" className="flex items-center gap-3 text-white">
+        <a href="#top" className="flex items-center text-white">
           <img
-            src="/img/picoli soluções elétricas logo final.png"
+            src="/img/picoli-logo.png"
             alt="Picoli Soluções Elétricas"
-            className="h-8 sm:h-9 lg:h-11 w-auto"
+            className="h-10 sm:h-11 lg:h-12 w-auto"
           />
-          <span className="text-[17px] sm:text-[20px] lg:text-[20px] font-semibold leading-none">Picoli Soluções Elétricas</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -65,7 +64,12 @@ export default function Header() {
         <div className="mobile-nav lg:hidden">
           <div className="flex flex-col px-2 pb-6">
             {links.map((link) => (
-              <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="block border-b border-white/10 px-6 py-4 text-base text-white/80 transition hover:bg-white/5 hover:text-gold"
+              >
                 {link.label}
               </a>
             ))}
@@ -73,7 +77,7 @@ export default function Header() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="mt-2 rounded-2xl bg-gold px-4 py-3 text-center text-sm font-semibold text-midnight"
+              className="mt-2 rounded-2xl bg-gold px-4 py-3 text-center text-base font-semibold text-midnight"
             >
               Chamar no WhatsApp
             </a>
