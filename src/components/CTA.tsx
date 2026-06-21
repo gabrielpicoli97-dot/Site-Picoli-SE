@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { WHATSAPP_URL } from '../config'
 
 export default function CTA() {
   return (
@@ -22,12 +23,12 @@ export default function CTA() {
             viewport={{ once: true, amount: 0.4 }}
           >
             <a
-              href="https://wa.me/5551995922019?text=Olá,%20quero%20um%20orçamento%20de%20elétrica%20residencial%20em%20Gravataí"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-4 text-sm font-semibold text-midnight shadow-lg shadow-gold/20 transition hover:scale-[1.02]"
+              className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-4 text-[16px] font-semibold text-midnight shadow-lg shadow-gold/20 transition hover:scale-[1.02]"
             >
-              Solicitar orçamento pelo WhatsApp
+              Solicitar orçamento
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
             <a

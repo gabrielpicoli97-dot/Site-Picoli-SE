@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion'
 import { PhoneCall, Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { WHATSAPP_URL } from '../config'
 
 const links = [
+  { label: 'Início', href: '#top' },
   { label: 'Serviços', href: '#services' },
-  { label: 'Problemas', href: '#problems' },
-  { label: 'Diferenciais', href: '#differentials' },
-  { label: 'Como funciona', href: '#steps' },
-  { label: 'Galeria', href: '#gallery' },
+  { label: 'Segurança', href: '#problems' },
+  { label: 'Sobre', href: '#about' },
+  { label: 'Contato', href: '#contact' },
 ]
 
 export default function Header() {
@@ -21,12 +22,13 @@ export default function Header() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
-        <a href="#top" className="flex items-center text-white">
+        <a href="#top" className="flex items-center gap-3 text-white">
           <img
             src="/img/picoli soluções elétricas logo final.png"
             alt="Picoli Soluções Elétricas"
-            className="h-12 w-auto"
+            className="h-8 sm:h-9 lg:h-11 w-auto"
           />
+          <span className="text-[17px] sm:text-[20px] lg:text-[20px] font-semibold leading-none">Picoli Soluções Elétricas</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -39,13 +41,13 @@ export default function Header() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="https://wa.me/5551995922019"
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-gold px-4 py-2 text-sm font-semibold text-midnight shadow-lg shadow-gold/20 transition hover:brightness-110"
           >
             <PhoneCall className="h-4 w-4" />
-            WhatsApp
+            Chamar no WhatsApp
           </a>
         </div>
 
@@ -68,12 +70,12 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="https://wa.me/5551995922019"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
               className="mt-2 rounded-2xl bg-gold px-4 py-3 text-center text-sm font-semibold text-midnight"
             >
-              Solicitar orçamento
+              Chamar no WhatsApp
             </a>
           </div>
         </div>

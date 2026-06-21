@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Bolt, ShieldCheck, Sparkles } from 'lucide-react'
+import { WHATSAPP_URL } from '../config'
 
 const heroVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -22,25 +23,25 @@ export default function Hero() {
             <Sparkles className="h-4 w-4" />
             Elétrica residencial em Gravataí
           </span>
-          <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-            Segurança e confiança para a elétrica da sua casa
+          <h1 className="font-semibold leading-tight text-white text-[30px] sm:text-[36px] lg:text-[52px]">
+            Eletricista residencial em Gravataí com atendimento rápido, seguro e bem feito.
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-8 text-white/75 sm:text-lg">
-            Instalações, reparos e manutenção elétrica residencial em Gravataí, com atendimento responsável, serviço caprichado e foco na segurança da sua família.
+          <p className="mt-6 max-w-xl text-[17px] leading-8 text-white/75">
+            Instalação de tomadas, troca de disjuntores, chuveiros, iluminação, ventiladores de teto e manutenção elétrica residencial com orçamento pelo WhatsApp.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
-              href="https://wa.me/5551995922019?text=Olá,%20quero%20um%20orçamento%20de%20elétrica%20residencial%20em%20Gravataí"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-midnight shadow-lg shadow-gold/20 transition hover:scale-[1.02] hover:brightness-105"
+              className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-[16px] font-semibold uppercase tracking-[0.06em] text-midnight shadow-lg shadow-gold/20 transition hover:scale-[1.02] hover:brightness-105"
             >
-              Solicitar orçamento pelo WhatsApp
+              Chamar no WhatsApp
             </a>
             <a
               href="#services"
-              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-gold hover:text-gold"
+              className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 text-[16px] font-semibold text-white/90 transition hover:border-gold hover:text-gold"
             >
               Ver serviços
             </a>

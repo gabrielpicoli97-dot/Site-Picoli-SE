@@ -11,6 +11,7 @@ import Maintenance from './components/Maintenance'
 import Testimonials from './components/Testimonials'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import { WHATSAPP_URL } from './config'
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
       </main>
 
       <a
-        href="https://wa.me/5551995922019?text=Olá,%20vi%20o%20site%20e%20gostaria%20de%20um%20orçamento%20de%20elétrica%20residencial"
+        href={WHATSAPP_URL}
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-6 right-6 z-50 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white transition-all duration-200 hover:scale-110 active:scale-95"

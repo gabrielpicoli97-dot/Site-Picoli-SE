@@ -1,3 +1,5 @@
+import { WHATSAPP_URL } from '../config'
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 py-10 text-sm text-white/60">
@@ -7,7 +9,7 @@ export default function Footer() {
           <p className="mt-2">Eletricista residencial em Gravataí/RS com foco em segurança, revisão e pequenos reparos.</p>
         </div>
         <div className="flex flex-col gap-2 sm:items-end">
-          <a href="https://wa.me/5551995922019" target="_blank" rel="noreferrer" className="transition hover:text-gold">
+          <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="transition hover:text-gold">
             WhatsApp: (51) 99592-2019
           </a>
           <p className="text-white/50">Atende Gravataí e bairros próximos: Centro, Santa Cecília, Morada do Vale e região.</p>
